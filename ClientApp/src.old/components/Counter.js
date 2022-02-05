@@ -15,8 +15,6 @@ export class Counter extends Component {
     });
   }
 
-  
-
   render() {
     return (
       <div>
