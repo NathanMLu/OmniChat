@@ -1,5 +1,5 @@
 namespace SBHacks.Controllers;
 
-class MessageController : IMessageService {
+class MessageController {
     
 }
