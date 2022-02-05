@@ -1,5 +1,14 @@
-namespace SBHacks;
-    // T --> the message service/app we are using
+namespace SBHacks.Controllers;
+
+// T --> the message service/app we are using
+
 interface IMessageService {
-    // TO-DO: Get messages
+    
+    public string
+    
+    
+
+    public void sendMessage(T);
+    
+
 }

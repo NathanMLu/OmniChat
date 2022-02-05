@@ -1,4 +1,4 @@
-namespace SBHacks;
+namespace SBHacks.Controllers;
 
 class MessageController : IMessageService {
     
