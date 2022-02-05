@@ -13,9 +13,15 @@ const NavMenu = () => {
             <Container>
                 <NavbarBrand tag={Link} to="/">Unified Messenger</NavbarBrand>
                 <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-                <ul className='no-bp'>
+                <ul className='nav-list'>
                     <NavItem>
-                        <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
+                        <NavLink tag={Link} className="text-dark nav-item" to="/">Home</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink tag={Link} className="text-dark nav-item" to="/twilio">Twilio</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink tag={Link} className="text-dark nav-item" to="/discord">Discord</NavLink>
                     </NavItem>
                 </ul>
             </Container>

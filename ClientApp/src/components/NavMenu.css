@@ -17,6 +17,9 @@ html {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-.no-bp {
+.nav-list {
   list-style: none;
+}
+.nav-item {
+  display: inline;
 }
