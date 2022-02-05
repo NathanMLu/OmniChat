@@ -1,12 +1,15 @@
-namespace DefaultNamespace; 
+using SBHacks;
 
-public class User {
-	public string name { get; set; }
-	
-	public string platform { get; set; }
+namespace DefaultNamespace{
 
-	public Message messageRecieved { get; set; }
+	public class User {
+		public string name { get; set; }
 
-	public Message messageSent { get; set; }
+		public string platform { get; set; }
 
+		public Message messageRecieved { get; set; }
+
+		public Message messageSent { get; set; }
+
+	}
 }

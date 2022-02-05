@@ -1,5 +1,5 @@
-namespace SBHacks.Controllers;
+namespace SBHacks.Controllers {
+	class MessageController {
 
-class MessageController {
-    
+	}
 }

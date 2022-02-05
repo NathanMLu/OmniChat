@@ -1,7 +1,10 @@
-namespace DefaultNamespace;
+using System;
 
-public struct Message {
-	public string LatestMessage { get; set; }
-	
-	public DateTime LatestTimestamp { get; set; }
+namespace SBHacks {
+
+	public struct Message {
+		public string LatestMessage { get; set; }
+
+		public DateTime LatestTimestamp { get; set; }
+	}
 }
