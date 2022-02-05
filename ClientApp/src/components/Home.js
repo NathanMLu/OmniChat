@@ -13,13 +13,22 @@ const Home = () => {
       {
           title: "Message 2",
           content: "message text 2"
-      }
+      },
+      {
+        title: "Message 3",
+        content: "message text 3"
+    }
   ];
+
+  fetchMessages = async () => {
+    const response = await fetch('message-feed');
+    return data = await response.json();
+  }
 
   return (
     <div>
         <Header />
-        <Feed messages={testMessages} />
+        <Feed messages={fetchMessages} />
         <Footer />
     </div>
   );

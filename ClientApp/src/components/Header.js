@@ -4,7 +4,16 @@ import './Header.css';
 const Header = () => {
     return (
         <header className='box-shadow'>
-            <h1>Universal Messenger</h1>
+            <h1>
+                <strong className='first-txt'>Omni</strong><em className='second-txt'>Talk</em> <i class="fa fa-comment" aria-hidden="true"></i>
+            </h1>
+            {/* <div className='buttons'>
+                <ul>
+                    <li class="btn">
+                        <p>Logout</p>
+                    </li>
+                </ul>
+            </div> */}
         </header>
     );
 };
