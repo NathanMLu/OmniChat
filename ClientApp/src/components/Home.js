@@ -1,12 +1,12 @@
 import React from 'react';
-import NavMenu from './NavMenu';
+import Header from './Header';
 import Footer from './Footer';
 
 
 
 const Home = () => {
   return <div>
-    <NavMenu />
+    <Header />
     <Footer />
   </div>;
 }
