@@ -1,9 +1,9 @@
 import React from 'react';
+import NavMenu from './NavMenu';
 
 const Home = () => {
-  return 
-  <div>
-    
+  return <div>
+    <NavMenu />
   </div>;
 }
 
