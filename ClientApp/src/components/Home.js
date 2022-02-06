@@ -17,8 +17,8 @@ export class Home extends Component {
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">{message.name}</h5>
-                <h6 className="card-subtitle mb-2 text-muted ">from {message.platform} at {message.messageReceived.LatestTimestamp}</h6>
-                <p className="card-text">{message.messageReceived.LatestMessage}</p>
+                <h6 className="card-subtitle mb-2 text-muted ">from {message.platform} at {message.messageReceived.latestTimestamp}</h6>
+                <p className="card-text">{message.messageReceived.latestMessage}</p>
               </div>
             </div>
         );
@@ -27,7 +27,7 @@ export class Home extends Component {
     render() {
         let contents = this.state.loading
             ? <p><em>Loading...</em></p>
-            : Home.renderMessage(this.state.messages);
+            : this.state.messages.map(message => Home.renderMessage(message));
 
         return (
             <div>
@@ -39,9 +39,11 @@ export class Home extends Component {
     }
 
     async populateMessage() {
+        const messagesArr = [];
         const response = await fetch('user');
-        const data = await response.json();
-        this.setState({messages: data, loading: false});
+        messagesArr.push(await response.json());
+        console.log(messagesArr)
+        this.setState({messages: messagesArr, loading: false});
     }
 }
 
