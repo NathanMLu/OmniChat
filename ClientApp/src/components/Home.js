@@ -3,28 +3,48 @@ import React, {Component} from 'react';
 export class Home extends Component {
     static displayName = Home.name;
 
-    populateMessages() {
-        return [
-            {
-                name: "Jamey",
-                platform: "Discord",
-                messageSent: {
-                    LatestMessage: "This is message sent from discord",
-					LatestTimestamp: new Date()
-                }
-            }
-        ];
+    constructor(props) {
+        super(props);
+        this.state = {messages: [], loading: true};
+    }
+
+    componentDidMount() {
+        this.populateMessage();
+    }
+
+    static renderMessage(message) {
+        return (
+            <div>
+                <h1>test</h1>
+
+                <p>
+                    {message.name}
+                    {message.platform}
+                </p>
+            </div>
+        );
     }
 
     render() {
+        let contents = this.state.loading
+            ? <p><em>Loading...</em></p>
+            : Home.renderMessage(this.state.messages);
+
         return (
             <div>
-                <h1>{this.populateMessages()[0].name}</h1>
-                <h1>{this.populateMessages()[0].platform}</h1>
-                <h1>{this.populateMessages()[0].messageSent.LatestMessage}</h1>
+                <h1>Testing Message Data</h1>
+                <p>trying to get data from c# backend.</p>
+                {contents}
             </div>
         );
-    }   
+    }
+
+    async populateMessage() {
+        const response = await fetch('user');
+        const data = await response.json();
+        console.log(data);
+        this.setState({messages: data, loading: false});
+    }
 }
 
 
