@@ -8,7 +8,7 @@ namespace DefaultNamespace{
 
 		public string platform { get; set; }
 
-		public Message messageRecieved { get; set; }
+		public Message messageReceived { get; set; }
 
 		public Message messageSent { get; set; }
 
