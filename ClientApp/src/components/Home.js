@@ -145,6 +145,7 @@ export class Home extends Component {
                                             </ul>
                                         </div>
                                     </div>
+                                    <input class = "w-100" type="text"/>
                                 </div>
                             </div>
                         </div>
