@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using DefaultNamespace;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -15,7 +17,7 @@ namespace SBHacks.Controllers {
 		}
 
 		[HttpPost]
-		public User Post() {
+		public User PostData() {
 			return new User {
 				name = "NathanGetting",
 				platform = "Discord",
@@ -27,15 +29,24 @@ namespace SBHacks.Controllers {
 		}
 
 		[HttpGet]
-		public User Get() {
-			return new User {
+		public IEnumerable<User> GetData() {
+			// return new User {
+			// 	name = "NathanPosting",
+			// 	platform = "Discord",
+			// 	messageReceived = new Message {
+			// 		latestMessage = "This is a get request (a message from discord)",
+			// 		latestTimestamp = DateTime.Now.ToString("HH:mm")
+			// 	},
+			// };
+			
+			return Enumerable.Range(1,5).Select(index => new User {
 				name = "NathanPosting",
 				platform = "Discord",
 				messageReceived = new Message {
 					latestMessage = "This is a get request (a message from discord)",
 					latestTimestamp = DateTime.Now.ToString("HH:mm")
 				},
-			};
+			}).ToArray();
 		}
 
 	}
