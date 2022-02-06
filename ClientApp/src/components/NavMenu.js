@@ -28,14 +28,8 @@ export class NavMenu extends Component {
                     <Container>
                         <NavbarBrand tag={Link} to="/">
                             <span className = "text-center mx-lg-5">
-                            <a href="https://ibb.co/HqDM47J"><img src="https://i.ibb.co/cQcp3Jm/Omni-Chat-2.png" alt="Omni-Chat-2" border="0" width = "50px"/></a>
+                            <a href="https://ibb.co/S3MXj6q"><img src="https://i.ibb.co/x7BSk2V/Omni-Chat-2.png" alt="Omni-Chat-2" border="0" height="90px"/></a>
                         </span>
-                        </NavbarBrand>
-                        
-                        <NavbarBrand id = "navbar-title" className = "text-xl-center "tag={Link} to="/">
-                            <span>
-                                <h2>OmniTalk</h2>
-                            </span>
                         </NavbarBrand>
 
                         
