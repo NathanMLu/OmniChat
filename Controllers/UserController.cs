@@ -21,7 +21,7 @@ namespace SBHacks.Controllers {
 				platform = "Discord",
 				messageSent = new Message {
 					LatestMessage = "This is a post request (a message from the user)",
-					LatestTimestamp = DateTime.Now
+					LatestTimestamp = DateTime.Now.ToString("HH:mm")
 				}
 			};
 		}
@@ -33,7 +33,7 @@ namespace SBHacks.Controllers {
 				platform = "Discord",
 				messageReceived = new Message {
 					LatestMessage = "This is a get request (a message from discord)",
-					LatestTimestamp = DateTime.Now
+					LatestTimestamp = DateTime.Now.ToString("HH:mm")
 				},
 			};
 		}
