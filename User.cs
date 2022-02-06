@@ -1,3 +1,4 @@
+using System;
 using SBHacks;
 
 namespace DefaultNamespace{
@@ -10,6 +11,8 @@ namespace DefaultNamespace{
 		public Message messageRecieved { get; set; }
 
 		public Message messageSent { get; set; }
+
+		public Guid id = Guid.NewGuid();
 
 	}
 }
