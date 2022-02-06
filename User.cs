@@ -4,8 +4,7 @@ using SBHacks;
 namespace DefaultNamespace{
 
 	public class User {
-		
-		
+
 		public string name { get; set; }
 
 		public string platform { get; set; }
@@ -13,5 +12,7 @@ namespace DefaultNamespace{
 		public Message messageReceived { get; set; }
 
 		public Message messageSent { get; set; }
+		
+		public int id { get; set; }
 	}
 }

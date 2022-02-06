@@ -10,6 +10,7 @@ namespace SBHacks.Controllers {
 	[ApiController]
 	[Route("[controller]")]
 	public class UserController : ControllerBase {
+		private int count = 0;
 		private readonly ILogger<UserController> _logger;
 		
 		public UserController(ILogger<UserController> logger) {
@@ -46,6 +47,7 @@ namespace SBHacks.Controllers {
 					latestMessage = "This is a get request (a message from discord)",
 					latestTimestamp = DateTime.Now.ToString("HH:mm")
 				},
+				id = count++
 			}).ToArray();
 		}
 
