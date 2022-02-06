@@ -40,15 +40,59 @@ namespace SBHacks.Controllers {
 			// 	},
 			// };
 			
-			return Enumerable.Range(1,5).Select(index => new User {
-				name = "NathanPosting",
+			//create a list of type user
+			List<User> users = new List<User>();
+			users.Add(new User {
+				name = "Silvia",
 				platform = "Discord",
 				messageReceived = new Message {
-					latestMessage = "This is a get request (a message from discord)",
+					latestMessage = "hey Nate, are you free later?",
 					latestTimestamp = DateTime.Now.ToString("HH:mm")
 				},
 				id = count++
-			}).ToArray();
+			});
+
+			users.Add(new User {
+				name = "Bald Samurai",
+				platform = "Discord",
+				messageReceived = new Message {
+					latestMessage = "Let's play some cod later bro",
+					latestTimestamp = "5:45"
+				},
+				id = count++
+			});
+			
+			users.Add(new User {
+				name = "Nicholas",
+				platform = "WhatsApp",
+				messageReceived = new Message {
+					latestMessage = "Hi, I was just following up about the meeting",
+					latestTimestamp = "11:27"
+				},
+				id = count++
+			});
+			
+			users.Add(new User {
+				name = "William S.",
+				platform = "WeChat",
+				messageReceived = new Message {
+					latestMessage = "Can you help me with something? I can't fix it",
+					latestTimestamp = "10:00"
+				},
+				id = count++
+			});
+			
+			users.Add(new User {
+				name = "Ashley :)",
+				platform = "SnapChat",
+				messageReceived = new Message {
+					latestMessage = "Hiii it's been so long how have you been?",
+					latestTimestamp = "2:34"
+				},
+				id = count++
+			});
+
+			return users.ToArray();
 		}
 
 	}

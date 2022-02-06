@@ -33,7 +33,7 @@ export class Home extends Component {
                         <div class="container">
                             <div class="row">
                                 <div id="main" class="col">
-                                    <h3 class="text-center">Latest Messages</h3>
+                                    <h3 class="text-center text-light">Latest Messages</h3>
                                     <hr/>
                                     <div class = "latest">
                                         {contents}
