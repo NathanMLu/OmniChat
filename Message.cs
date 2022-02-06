@@ -3,8 +3,8 @@ using System;
 namespace SBHacks {
 
 	public struct Message {
-		public string LatestMessage { get; set; }
+		public string latestMessage { get; set; }
 
-		public string LatestTimestamp { get; set; }
+		public string latestTimestamp { get; set; }
 	}
 }
