@@ -27,7 +27,7 @@ export class Home extends Component {
             : this.state.messages.map(message => Home.renderMessage(message));
 
         return (
-            <div class="container content">
+            <div class="container content pt-lg-5">
                 <div class="row">
                     <div id="main-container">
                         <div class="container">
@@ -66,7 +66,7 @@ export class Home extends Component {
                                                     <div class="chat-body">
                                                         <div class="chat-message">
                                                             <h5>Nathan Lu</h5>
-                                                            <p>Nah, what's that? Some sort of dancing competition?</p>
+                                                            <p>Nah, what's that? Some sort of dancing competition? 💃 lol</p>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -91,6 +91,54 @@ export class Home extends Component {
                                                         <div class="chat-message">
                                                             <h5>Nathan Lu</h5>
                                                             <p>Ooh, sounds fun, I might have to check it out...</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="out">
+                                                    <div class="chat-img">
+                                                        <img alt="Avtar"
+                                                             src="https://bootdey.com/img/Content/avatar/avatar7.png"/>
+                                                    </div>
+                                                    <div class="chat-body">
+                                                        <div class="chat-message">
+                                                            <h5>Nathan Lu</h5>
+                                                            <p>Can you send me a link?</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="in">
+                                                    <div class="chat-img">
+                                                        <img alt="Avtar"
+                                                             src="https://bootdey.com/img/Content/avatar/avatar6.png"/>
+                                                    </div>
+                                                    <div class="chat-body">
+                                                        <div class="chat-message">
+                                                            <h5 class="name">Oliver Wilcox</h5>
+                                                            <p>https://sb-hacks-viii.devpost.com/</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="out">
+                                                    <div class="chat-img">
+                                                        <img alt="Avtar"
+                                                             src="https://bootdey.com/img/Content/avatar/avatar7.png"/>
+                                                    </div>
+                                                    <div class="chat-body">
+                                                        <div class="chat-message">
+                                                            <h5>Nathan Lu</h5>
+                                                            <p>Are u going?</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="in">
+                                                    <div class="chat-img">
+                                                        <img alt="Avtar"
+                                                             src="https://bootdey.com/img/Content/avatar/avatar6.png"/>
+                                                    </div>
+                                                    <div class="chat-body">
+                                                        <div class="chat-message">
+                                                            <h5 class="name">Oliver Wilcox</h5>
+                                                            <p>Yep! Gonna be a grind 👀 but there's some sick prizes :) </p>
                                                         </div>
                                                     </div>
                                                 </li>
