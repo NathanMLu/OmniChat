@@ -33,6 +33,14 @@ body {
   background-color: var(white-color);
 }
 
+#addfriend{
+  background-color: #1a293020;
+}
+
+#addfriend:hover{
+  background-color: #1a293060;
+}
+
 
 body{
   background:#eee;

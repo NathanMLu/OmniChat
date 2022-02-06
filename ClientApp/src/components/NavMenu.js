@@ -25,16 +25,26 @@ export class NavMenu extends Component {
         return (
             <header>
                 <Navbar id = "navbar" className="navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" light>
-                    <Container>                        
-                        <NavbarBrand id = "navbar-title" className = "bg-info text-xl-center"tag={Link} to="/">
-                            OmniTalk
+                    <Container>
+                        <NavbarBrand tag={Link} to="/">
+                            <span className = "text-center mx-lg-5">
+                            <a href="https://ibb.co/HqDM47J"><img src="https://i.ibb.co/cQcp3Jm/Omni-Chat-2.png" alt="Omni-Chat-2" border="0" width = "50px"/></a>
+                        </span>
                         </NavbarBrand>
+                        
+                        <NavbarBrand id = "navbar-title" className = "text-xl-center "tag={Link} to="/">
+                            <span>
+                                <h2>OmniTalk</h2>
+                            </span>
+                        </NavbarBrand>
+
+                        
                         
                         <NavbarToggler onClick={this.toggleNavbar} className="mr-2"/>
                         <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed}
                                   navbar>
                             <ul className="navbar-nav flex-grow">
-                                <NavItem>
+                                <NavItem id = "addfriend"className = "border rounded-3 border-dark border-3">
                                     <NavLink tag={Link} className="text-dark" to="/friend">Add Friend</NavLink>
                                 </NavItem>
                             </ul>

@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className='box-shadow'>
             <h1>
-                <strong className='first-txt'>Omni</strong><em className='second-txt'>Talk</em> <i class="fa fa-comment" aria-hidden="true"></i>
+                <strong className='first-txt'>Omni</strong><em className='second-txt'>Talk</em> <i className="fa fa-comment" aria-hidden="true"></i>
             </h1>
             {/* <div className='buttons'>
                 <ul>

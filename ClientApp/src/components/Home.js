@@ -49,48 +49,48 @@ export class Home extends Component {
                                                 <li class="in">
                                                     <div class="chat-img">
                                                         <img alt="Avtar"
-                                                             src="https://bootdey.com/img/Content/avatar/avatar2.png"/>
+                                                             src="https://bootdey.com/img/Content/avatar/avatar6.png"/>
                                                     </div>
                                                     <div class="chat-body">
                                                         <div class="chat-message">
-                                                            <h5>Jimmy Willams</h5>
-                                                            <p>Raw denim heard of them tofu master cleanse</p>
+                                                            <h5>Oliver Wilcox</h5>
+                                                            <p>Have you heard about SBHacks?</p>
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li class="out">
                                                     <div class="chat-img">
                                                         <img alt="Avtar"
-                                                             src="https://bootdey.com/img/Content/avatar/avatar3.png"/>
+                                                             src="https://bootdey.com/img/Content/avatar/avatar7.png"/>
                                                     </div>
                                                     <div class="chat-body">
                                                         <div class="chat-message">
-                                                            <h5>Serena</h5>
-                                                            <p>Next level veard</p>
+                                                            <h5>Nathan Lu</h5>
+                                                            <p>Nah, what's that? Some sort of dancing competition?</p>
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li class="in">
                                                     <div class="chat-img">
                                                         <img alt="Avtar"
-                                                             src="https://bootdey.com/img/Content/avatar/avatar2.png"/>
+                                                             src="https://bootdey.com/img/Content/avatar/avatar6.png"/>
                                                     </div>
                                                     <div class="chat-body">
                                                         <div class="chat-message">
-                                                            <h5 class="name">Jimmy Willams</h5>
-                                                            <p>Will stumptown scenes coffee viral.</p>
+                                                            <h5 class="name">Oliver Wilcox</h5>
+                                                            <p>It's a 36 hour hackathon where you build a project!</p>
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li class="out">
                                                     <div class="chat-img">
                                                         <img alt="Avtar"
-                                                             src="https://bootdey.com/img/Content/avatar/avatar3.png"/>
+                                                             src="https://bootdey.com/img/Content/avatar/avatar7.png"/>
                                                     </div>
                                                     <div class="chat-body">
                                                         <div class="chat-message">
-                                                            <h5>Serena</h5>
-                                                            <p>Tofu master best deal</p>
+                                                            <h5>Nathan Lu</h5>
+                                                            <p>Ooh, sounds fun, I might have to check it out...</p>
                                                         </div>
                                                     </div>
                                                 </li>
