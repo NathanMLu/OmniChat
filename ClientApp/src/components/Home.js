@@ -14,13 +14,12 @@ export class Home extends Component {
 
     static renderMessage(message) {
         return (
-            <div>
-                <h1>test</h1>
-
-                <p>
-                    {message.name}
-                    {message.platform}
-                </p>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">{message.name}</h5>
+                <h6 className="card-subtitle mb-2 text-muted ">from {message.platform} at {message.messageReceived.LatestTimestamp}</h6>
+                <p className="card-text">{message.messageReceived.LatestMessage}</p>
+              </div>
             </div>
         );
     }
