@@ -20,6 +20,7 @@ export class Home extends Component {
                 <p>
                     {message.name}
                     {message.platform}
+                    {message.id}
                 </p>
             </div>
         );
@@ -42,7 +43,6 @@ export class Home extends Component {
     async populateMessage() {
         const response = await fetch('user');
         const data = await response.json();
-        console.log(data);
         this.setState({messages: data, loading: false});
     }
 }

@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
       <Layout>
         <Route exact path='/' component={Home} />
-        <Route path='/user' component={FetchData} />
+        <Route path='/friend' component={FetchData} />
       </Layout>
     );
   }
