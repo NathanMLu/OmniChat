@@ -9,12 +9,12 @@ export class FetchData extends Component {
     }
 
     componentDidMount() {
-        this.populateWeatherData();
+        this.populateMessages();
     }
 
-    static renderForecastsTable(forecasts) {
+    static renderMessages(forecasts) {
         return (
-            <table className='table table-striped' aria-labelledby="tabelLabel">
+            <table>
                 <thead>
                 <tr>
                     <th>Date</th>
@@ -40,19 +40,19 @@ export class FetchData extends Component {
     render() {
         let contents = this.state.loading
             ? <p><em>Loading...</em></p>
-            : FetchData.renderForecastsTable(this.state.forecasts);
+            : FetchData.renderMessages(this.state.forecasts);
 
         return (
             <div>
-                <h1 id="tabelLabel">Weather forecast</h1>
+                <h1>Testing Message Data</h1>
                 <p>This component demonstrates fetching data from the server.</p>
                 {contents}
             </div>
         );
     }
 
-    async populateWeatherData() {
-        const response = await fetch('weatherforecast');
+    async populateMessages() {
+        const response = await fetch('user');
         const data = await response.json();
         this.setState({forecasts: data, loading: false});
     }

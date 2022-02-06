@@ -1,6 +1,6 @@
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+  color: #F7CE3E;
 }
 
 code {
@@ -8,7 +8,9 @@ code {
 }
 
 .btn-primary {
-  color: #fff;
+  color: #c5c1c0;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+
