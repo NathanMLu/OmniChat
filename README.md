@@ -1,5 +1,7 @@
 # SB-Hacks
 
+Won "Best Creating Change Hack" and "Most Creative Use of Twilio"
+
 https://devpost.com/software/omnichat
 
 ## Inspiration

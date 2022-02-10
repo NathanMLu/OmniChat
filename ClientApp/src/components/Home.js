@@ -142,6 +142,18 @@ export class Home extends Component {
                                                         </div>
                                                     </div>
                                                 </li>
+                                                <li class="out">
+                                                    <div class="chat-img">
+                                                        <img alt="Avtar"
+                                                             src="https://bootdey.com/img/Content/avatar/avatar7.png"/>
+                                                    </div>
+                                                    <div class="chat-body">
+                                                        <div class="chat-message">
+                                                            <h5>Nathan Lu</h5>
+                                                            <p>That's awesome! Can't wait :D</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
